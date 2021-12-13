@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All Products-RedStore</title> 
+        <link rel="stylesheet" href="style.css">   
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,400&family=Hind+Madurai:wght@300;400;500;600;700&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">  
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">  
+    </head>
+    <body> 
+     <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="indexpage.html">Home</a></li>
+                    <li><a href="products.html">Product</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="login.html">Account</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+          <a href="indexpage.html"><img src="images/menu.png" class="menu-icon"  class="menu-icon" onclick="menutoggle()"></a>
+        </div>
+     </div>   
+     <!-----single product detail-->
+
+     <div class="small-container single-product">
+         <div class="row">
+             <div class="col-2">
+                 <img src="images/gallery-1.jpg" width="100%"  id="productImg">
+                 <div class="small-img-row">
+                     <div class="small-img-col">
+                         <img src="images/gallery-1.jpg" width="100%" class="small-img">
+                     </div>
+                     <div class="small-img-col">
+                        <img src="images/gallery-2.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery-3.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery-4.jpg" width="100%" class="small-img">
+                    </div>
+                 </div>
+
+             </div>
+                 <div class="col-2">
+                     <p>Home / T-Shirt</p>
+                     <h1>Red Printed T-Shirt By HRX</h1>
+                     <h4>&#8377 399</h4>
+                     <select>
+                         <option>Select Size</option>
+                         <option>XXL</option>
+                         <option>XL</option>
+                         <option>Large</option>
+                         <option>Medium</option>
+                         <option>Small</option>
+                     </select>
+                     <input type="number" value="1">
+                     <a href="" class="btn">Add To Cart</a>
+                     <h3>Product Detail</h3>
+                     <p>Give your summer wardrobe a style upgrade with the HRX Men's Active T-Shirt. Team it with a pair of shorts for your Morning or a denims for a evening out with the guys.</p>
+
+                 </div>
+             </div>
+         </div>
+             <!---title-->
+             <div class="small-container">
+                 <div class="row row-2">
+                     <h2>Related Products</h2>
+                     <p>View More</p>
+                 </div>
+             </div>
+
+     <div class="small-container">
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/product-9.jpg" >
+                    <h4>Roadster Watch</h4>
+                    <div class="rating">
+                      <p>&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    </div>
+                    <p> &#8377 2199</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-10.jpg" >
+                    <h4>Shoes by HRX</h4>
+                    <div class="rating">
+                      <p>&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    </div>
+                    <p> &#8377 2999</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-11.jpg" >
+                    <h4>Casual Shoes</h4>
+                    <div class="rating">
+                      <p>&#9733;&#9733;&#9733;&#9734;&#9734;</p>
+                    </div>
+                    <p> &#8377 349</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-12.jpg" >
+                    <h4>Navy Blue Track pant</h4>
+                    <div class="rating">
+                      <p>&#9733;&#9733;&#9733;&#9734;&#9734;</p>
+                    </div>
+                    <p> &#8377 399</p>
+                </div>
+            </div> 
+        </div> 
+    <!----footer--->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-2">
+                    <img src="images\logo-white.png"> <p>Our Purpose is To Sustainably Make The Pleasure and Benefits of Sports Accessible To The Many </p>
+                </div>
+            </div>    
+            <div class="row">  
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                 <ul>
+                    <li>Coupons</li>
+                    <li>Blog post</li>
+                    <li>Return Policy</li>
+                 </ul>
+                </div>
+             <div class="footer-col-4">
+                 <h3>Follow Us</h3>
+              <ul>
+                 <li>Facebook</li>
+                 <li>instagram</li>
+                 <li>linked In</li>
+              </ul>
+             </div>  
+            </div>
+            <hr>
+            <p class="Copyright">Copyright 2021-ABESIT</p>
+        </div>
+    </div>  
+    <!----js for toggle menu--->
+    <script>
+        var MenuItem= document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if( MenuItems.style.maxHeight == "0px")
+               {
+                MenuItems.style.maxHeight = "200px";
+               }
+               else
+               {
+                MenuItems.style.maxHeight = "0px";
+               }
+        }
+    </script>  
+    <!---js for product gallery-->
+    <script>
+        var productImg = document.getElementById("productImg");
+        var smallImg = document.getElementsByClassName("small-img");
+        smallImg[0].onclick = function()
+        {
+            productImg.src = smallImg[0].src;  
+        }
+        smallImg[1].onclick = function()
+        {
+            productImg.src = smallImg[1].src;  
+        }
+        smallImg[2].onclick = function()
+        {
+            productImg.src = smallImg[2].src;  
+        }
+        smallImg[3].onclick = function()
+        {
+            productImg.src = smallImg[3].src;  
+        }
+    </script>
+    </body>
+</html>
